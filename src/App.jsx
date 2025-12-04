@@ -20,14 +20,14 @@ function App() {
       <h1>PROYECTO --- VICTORIA</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          El conteo es {count}
         </button>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Edita <code>src/App.jsx</code> y guardelo para probrar los cambios.
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Click en los logos para ir a la documentacion de Vite y React
       </p>
       <PWABadge />
     </>
