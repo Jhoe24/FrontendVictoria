@@ -3,9 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Jhoe24.github.io/FrontendVictoria",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "deploy:cloudflare": "npm run build && wrangler pages publish ./dist --project-name=frontendvictoria",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -27,6 +31,9 @@
     "vite-plugin-pwa": "^1.1.0",
     "workbox-core": "^7.3.0",
     "workbox-window": "^7.4.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   },
   "overrides": {
     "sharp": "^0.33.5",
