@@ -31,10 +31,6 @@ export default defineConfig({
     },
 
     devOptions: {
-      // Enable PWA features during development for local testing (localhost).
-      // Note: Service workers and installability require a secure origin
-      // (https) except for `localhost`. For testing from another device
-      // on the network, consider using a tunnel (ngrok) or build+serve over HTTPS.
       enabled: true,
       navigateFallback: 'index.html',
       suppressWarnings: true,
